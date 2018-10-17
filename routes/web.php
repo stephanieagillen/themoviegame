@@ -26,7 +26,11 @@
 //     return view('welcome');
 // });
 
-// Route::('/games/{game}', 'GamesController@show');
+//Route::('/games/{game}', 'GamesController@show');
+
+// Route::get('/games', function(){
+// 	return View::make('games');
+// });
 
 
 Auth::routes();
