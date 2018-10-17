@@ -28,8 +28,6 @@
 
 // Route::('/games/{game}', 'GamesController@show');
 
-Route::get('/games/index', 'GamesController@index');
-
 
 Auth::routes();
 
