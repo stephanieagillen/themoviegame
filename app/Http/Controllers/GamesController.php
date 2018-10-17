@@ -22,13 +22,13 @@ class GamesController extends Controller
     *
     *@return Response
     */
-    public function create(){
+    // public function create(){
 
-    }
+    // }
 
-    public function show(Game $game){
-    	return $game;
+    // public function show(Game $game){
+    // 	return $game;
 
-    	return view()
-    }
+    // 	return view()
+    // }
 }
