@@ -1,3 +1,8 @@
-<h1>HIHIHI</h1>
+@extends('layouts.app')
 
-<p>hello</p>
+
+@section('content')
+
+	<h1>testing</h1>
+
+@endsection
