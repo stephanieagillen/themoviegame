@@ -11,6 +11,7 @@
 |
 */
 
+
 //you will need:
 //Controller => GameController
 //Eloquent model => Game
@@ -31,6 +32,11 @@
 // Route::get('/games', function(){
 // 	return View::make('games');
 // });
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
 
 
 Auth::routes();
