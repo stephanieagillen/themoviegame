@@ -30,7 +30,7 @@
 //Route::('/games/{game}', 'GamesController@show');
 
 Route::get('/games', function(){
-	return view('games');
+	return view('games.game');
 });
 
 
