@@ -29,14 +29,16 @@
 
 //Route::('/games/{game}', 'GamesController@show');
 
-// Route::get('/games', function(){
-// 	return View::make('games');
-// });
+Route::get('/games', function(){
+	return view('games');
+});
 
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+
 
 
 Auth::routes();
