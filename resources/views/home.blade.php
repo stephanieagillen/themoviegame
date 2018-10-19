@@ -8,6 +8,9 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#favoritesModal">
+                  Add to Favorites
+                </button>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -16,9 +19,7 @@
 
                     You are logged in!
                 </div>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#favoritesModal">
-                  Add to Favorites
-                </button>
+                
 
                 <div class="modal fade" id="favoritesModal" 
                      tabindex="-1" role="dialog" 
