@@ -8,12 +8,12 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#favoritesModal">
-                  Add to Favorites
+                <button type="button" class="btn btn-primary btn-lg mt-5" data-toggle="modal" data-target="#favoritesModal">
+                  Create New Game
                 </button>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
+                           <p>{{ session('status') }}</p>
                         </div>
                     @endif
 
