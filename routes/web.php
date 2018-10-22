@@ -29,9 +29,7 @@
 
 //Route::('/games/{game}', 'GamesController@show');
 
-Route::get('/games', function(){
-	return view('games.game');
-});
+
 
 
 Route::get('/', function () {
@@ -44,3 +42,21 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/test', function(){
+	return view('games.game');
+});
+
+
+Route::get('/games', 'GameController@index');
+Route::get('/game/create', 'GameController@create');
+Route::get('/games/{id}', 'GameController@show');
+
+Route::get('/gamelist', function() {
+	return view('games', [
+		'games' => ['Tim\'s Birthday', 'Hollis\'s Birthday','friendsgiving']
+	]);
+});
+
+
+
