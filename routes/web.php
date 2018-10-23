@@ -54,7 +54,7 @@ Route::get('/games/{id}', 'GameController@show');
 
 Route::get('/gamelist', function() {
 	return view('gamelist', [
-		'games' => ['Tim\'s Birthday', 'Hollis\'s Birthday','friendsgiving']
+		'games' => ['Christmas', 'Hollis\'s Birthday','friendsgiving']
 	]);
 });
 
