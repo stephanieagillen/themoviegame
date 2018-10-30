@@ -5,10 +5,10 @@
 </head>
 <body>
 <ul>
-	@for(var $i=0;$i<count($games);$i++)
-		<li>{{ $games[i] }}</li>
+	@for($i=0;$i<count($games);$i++)
+		<li>{{ $games[i]->name }}</li>
 	@endfor
-	<li>{{ $games[0]->name }}
+	
 </ul>
 </body>
 </html>
