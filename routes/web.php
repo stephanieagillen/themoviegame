@@ -74,9 +74,9 @@ Route::get('/games/{id}', 'GameController@show');
 // });
 
 Route::get('/gamelist', function () {
-	$games=DB::table('games')->get();
+	$games=DB::table('name')->get();
 
-	return view('gamelist', ['games'=>$games]);
+	return view('gamelist', ['name'=>$games]);
 
 });
 
