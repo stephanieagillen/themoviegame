@@ -5,7 +5,7 @@
 </head>
 <body>
 <ul>
-	<?php $games;?>
+	<li>{{ $games[0]->name }}
 </ul>
 </body>
 </html>
