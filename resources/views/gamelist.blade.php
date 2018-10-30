@@ -5,9 +5,7 @@
 </head>
 <body>
 <ul>
-	<?php foreach ($games as $game): ?>
-	<li><?=$game;?></li>
-	<?php endforeach; ?>
+	<?php $games;?>
 </ul>
 </body>
 </html>
