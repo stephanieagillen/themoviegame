@@ -13,9 +13,21 @@ class GameController extends Controller
     */
     public function index(){
 
-    	return view('games.index');
+    	$games = Game::all();
+    	return view('games.index',['games'=>$games]);
 
     }
+
+    /**
+    *Display a the game selected.
+    *
+    *@return Response
+    */
+
+    public function show(Game $id){
+    	return view('games.show',['game'=>$id]);
+    }
+
 
     /**
     *Show the form for creating a new game.
@@ -24,11 +36,9 @@ class GameController extends Controller
     */
     public function create(){
 
+    	return 'it workds';
+
     }
 
-    public function show(Game $game){
-    	return $game;
-
-    	return view()
-    }
+    
 }

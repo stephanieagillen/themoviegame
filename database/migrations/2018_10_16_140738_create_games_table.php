@@ -23,10 +23,16 @@ class CreateGamesTable extends Migration
             $table->json('guesses');
             $table->json('scores');
             $table->json('critic_scores');
-            $table->unsignedInteger('user_id');
+            $table->integer('user_id')->index();
 
 
             $table->timestamps();
+
+
+            $table
+                ->foreign('user_id')
+                ->references('id')
+                ->on('users');
         });
     }
 

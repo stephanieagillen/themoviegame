@@ -52,11 +52,41 @@ Route::get('/games', 'GameController@index');
 Route::get('/game/create', 'GameController@create');
 Route::get('/games/{id}', 'GameController@show');
 
-Route::get('/gamelist', function() {
-	return view('gamelist', [
-		'games' => ['Christmas', 'Hollis\'s Birthday','friendsgiving']
-	]);
+// Route::get('/gamelist', function() {
+// 	return view('gamelist', [
+// 		'games' => ['Christmas', 'Hollis\'s Birthday','friendsgiving'];
+// 	]);
+// });
+
+// Route::get('/gamelist', function(){
+// 	$data['games']=['Christmas', 'Hollis\'s Birthday','friendsgiving'];
+// 	return view('games', $data);
+// });
+
+// Route::get('/gamelist', function(){
+// 	$games=['Christmas', 'Hollis\'s Birthday','friendsgiving'];
+// 	return view('games')->with('games', $games);
+// });
+
+// Route::get('gamelist', function(){
+// 	$games=['Christmas', 'Hollis\'s Birthday','friendsgiving'];
+// 	return view('games', compact('games'));
+// });
+
+Route::get('/gameslist', function () {
+	$games=DB::table('games')->get();
+
+	return view('gamelist', ['games'=>$games]);
+
 });
+
+
+
+
+
+
+
+
 
 
 
