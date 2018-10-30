@@ -5,7 +5,7 @@
 </head>
 <body>
 <ul>
-	@for($i=0;$i<count($games);$i++)
+	@for(var $i=0;$i<count($games);$i++)
 		<li>{{ $games[i] }}</li>
 	@endfor
 	<li>{{ $games[0]->name }}
