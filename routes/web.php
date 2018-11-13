@@ -73,13 +73,18 @@ Route::get('/games/{id}', 'GameController@show');
 // 	return view('games', compact('games'));
 // });
 
-Route::get('/gamelist', function () {
-	$games=DB::table('games')->get();
+// Route::get('/gamelist', function () {
+// 	$games=DB::table('games')->get();
 
-	return view('gamelist', ['games'=>$games]);
+// 	return view('gamelist', ['games'=>$games]);
 
+// });
+
+Route::get('/gamelist', function(){
+	$games = DB::table('games')->get();
+
+	dd($games);
 });
-
 
 
 
