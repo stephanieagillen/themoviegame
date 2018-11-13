@@ -80,11 +80,17 @@ Route::get('/games/{id}', 'GameController@show');
 
 // });
 
-Route::get('/gamelist', function(){
-	$games = DB::table('games')->get();
+// Route::get('/gamelist', function(){
+// 	$games = DB::table('games')->get();
 
-	dd($games);
-});
+// 	dd($games);
+// });
+
+Route::get('/gamelist', function(){
+	$games = DB::('$games')->get();
+
+	return $games;
+})
 
 
 
