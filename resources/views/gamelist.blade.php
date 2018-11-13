@@ -5,9 +5,7 @@
 </head>
 <body>
 <ul>
-	@for($i=0;$i<count($games);$i++)
-		<li>{{ $games[i]->name }}</li>
-	@endfor
+	<?php print_r($viewgames); ?>
 	
 </ul>
 </body>

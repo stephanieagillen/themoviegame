@@ -86,10 +86,16 @@ Route::get('/games/{id}', 'GameController@show');
 // 	dd($games);
 // });
 
-Route::get('/gamelist', function(){
+// Route::get('/gamelist', function(){
+// 	$games = DB::table('games')->get();
+
+// 	return $games;
+// });
+
+Route::get('/game', function(){
 	$games = DB::table('games')->get();
 
-	return $games;
+	return view('gamelist', ['viewgames' => $games]);
 });
 
 
