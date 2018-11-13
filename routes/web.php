@@ -90,7 +90,7 @@ Route::get('/gamelist', function(){
 	$games = DB::('$games')->get();
 
 	return $games;
-})
+});
 
 
 
