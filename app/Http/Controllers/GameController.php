@@ -13,7 +13,7 @@ class GameController extends Controller
     */
     public function index(){
 
-    	$games = Game::all();
+    	$games = Games::all();
     	return view('games.index',['games'=>$games]);
 
     }
