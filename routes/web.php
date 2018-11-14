@@ -93,7 +93,7 @@ Route::get('/games/{id}', 'GameController@show');
 // });
 
 Route::get('/game', function(){
-	$games = DB::table('games')->get();
+	$games = DB::table('games')->where('name','party')->get();
 
 	return view('gamelist', ['viewgames' => $games]);
 });
