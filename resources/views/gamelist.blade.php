@@ -6,6 +6,14 @@
 <body>
 <ul>
 	<?php print_r($viewgames); ?>
+
+	<table>
+		@for($i=0;$i<count($viewgames); $i++)
+		<tr>
+			<td>{{  $viewgames[$i]->name  }}</td> 
+			<td>{{  $viewgames[$i]->players  }}
+		</tr>
+	</table>
 	
 </ul>
 </body>
