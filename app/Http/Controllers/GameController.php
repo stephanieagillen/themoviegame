@@ -18,16 +18,16 @@ class GameController extends Controller
 
     }*/
 
-    
+
     /**
     *Display a the game selected.
     *
     *@return Response
     */
 
-    public function show(Game $id){
+    /*public function show(Game $id){
     	return view('games.show',['game'=>$id]);
-    }
+    }*/
 
 
     /**
