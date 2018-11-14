@@ -11,8 +11,9 @@
 		@for($i=0;$i<count($viewgames); $i++)
 		<tr>
 			<td>{{  $viewgames[$i]->name  }}</td> 
-			<td>{{  $viewgames[$i]->players  }}
+			<td>{{  $viewgames[$i]->players  }}</td>
 		</tr>
+		@endfor
 	</table>
 	
 </ul>
