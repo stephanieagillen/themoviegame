@@ -11,13 +11,14 @@ class GameController extends Controller
     *
     *@return Response
     */
-    public function index(){
+    /*public function index(){
 
     	$games = Games::all();
     	return view('games.index',['games'=>$games]);
 
-    }
+    }*/
 
+    
     /**
     *Display a the game selected.
     *
