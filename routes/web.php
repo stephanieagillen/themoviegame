@@ -121,7 +121,9 @@ Route::get('/games/{id}', 'GameController@show');
 
 Route::get('/calculator', function(){
 	return view('calculator');
-})
+});
+
+
 
 
 
