@@ -92,13 +92,36 @@ Route::get('/games/{id}', 'GameController@show');
 // 	return $games;
 // });
 
-Route::get('/game', function(){
-	$games = DB::table('games')->where('name','party')->get();
+// Route::get('/game', function(){
+// 	$games = DB::table('games')->latest()->get();
 
-	return view('gamelist', ['viewgames' => $games]);
-});
+// 	return view('gamelist', ['viewgames' => $games]);
+// });
 
+// Route::get('/game', function(){
+// 	$games = DB::table('games')->latest()->get();
 
+// 	return view('games.index', ['viewgames' => $games]);
+// });
+
+// Route::get('/game/{id}', function($id){
+// 	$game = DB::table('games')->find($id);
+
+// 	return view('games.show', ['thegame' => $game]);
+
+// });
+
+// Route::get('games', function() {
+
+// 	$games = App\Game::all();
+
+// 	return view('games.index',)
+
+// });
+
+Route::get('/calculator', function(){
+	return view('calculator');
+})
 
 
 
