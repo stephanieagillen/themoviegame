@@ -48,9 +48,9 @@ Route::get('/test', function(){
 });
 
 
-Route::get('/games', 'GameController@index');
-Route::get('/game/create', 'GameController@create');
-Route::get('/games/{id}', 'GameController@show');
+//Route::get('/games', 'GameController@index');
+//Route::get('/game/create', 'GameController@create');
+//Route::get('/games/{id}', 'GameController@show');
 
 // Route::get('/gamelist', function() {
 // 	return view('gamelist', [
@@ -101,7 +101,7 @@ Route::get('/games/{id}', 'GameController@show');
 Route::get('/game', function(){
 	$games = DB::table('games')->latest()->get();
 
-	return view('games.index', ['viewgames' => $games]);
+	return view('games.index', ['games' => $games]);
 });
 
 Route::get('/game/{id}', function($id){
