@@ -11,7 +11,7 @@
  
 <ul>
     @foreach($games as $game)
-        <li>{{ $game->name }}</li>
+        <li><a href="/game/{{ $game->id }}">{{ $game->name }}</a></li>
     @endforeach
 </ul>
  
