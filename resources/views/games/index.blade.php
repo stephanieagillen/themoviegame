@@ -1,4 +1,4 @@
-<!-- // resources/views/games/index.blade.php
+<!-- esources/views/games/index.blade.php
 
 
 @extends('app.layouts')
