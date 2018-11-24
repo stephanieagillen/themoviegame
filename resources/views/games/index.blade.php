@@ -1,16 +1,4 @@
-<!-- esources/views/games/index.blade.php
 
-
-@extends('app.layouts')
-
-
-@section('content')
-
-
-	Bootstrap Boilerplate... 
-
-
-@endsection -->
 
 
 <!DOCTYPE html>
@@ -23,7 +11,6 @@
  
 <ul>
     @foreach($games as $game)
-        <!-- <li><a href="/games/{{ $game->id }}">{{ $game->title }}</a></li> -->
         <li>$game</li>
     @endforeach
 </ul>
