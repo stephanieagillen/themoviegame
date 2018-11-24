@@ -98,18 +98,18 @@ Route::get('/games/{id}', 'GameController@show');
 // 	return view('gamelist', ['viewgames' => $games]);
 // });
 
-// Route::get('/game', function(){
-// 	$games = DB::table('games')->latest()->get();
+Route::get('/game', function(){
+	$games = DB::table('games')->latest()->get();
 
-// 	return view('games.index', ['viewgames' => $games]);
-// });
+	return view('games.index', ['viewgames' => $games]);
+});
 
-// Route::get('/game/{id}', function($id){
-// 	$game = DB::table('games')->find($id);
+Route::get('/game/{id}', function($id){
+	$game = DB::table('games')->find($id);
 
-// 	return view('games.show', ['thegame' => $game]);
+	return view('games.show', ['thegame' => $game]);
 
-// });
+});
 
 // Route::get('games', function() {
 
