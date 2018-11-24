@@ -22,7 +22,7 @@
 <body>
  
 <ul>
-    @foreach($games as $game)
+    @foreach($viewgames as $game)
         <li><a href="/games/{{ $game->id }}">{{ $game->title }}</a></li>
     @endforeach
 </ul>
