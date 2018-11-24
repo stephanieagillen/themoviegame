@@ -11,7 +11,7 @@
  
 <ul>
     @foreach($games as $game)
-        <li>$game</li>
+        <li>{{ $game }}</li>
     @endforeach
 </ul>
  
