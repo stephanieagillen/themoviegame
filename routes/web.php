@@ -104,8 +104,8 @@ Route::get('/game', function(){
 	return view('games.index', ['games' => $games]);
 });
 
-Route::get('/game/{id}', function($id){
-	$game = DB::table('games')->find($id);
+Route::get('/game/{game_id}', function($game_id){
+	$game = DB::table('games')->find($game_id);
 
 	return view('games.show', ['thegame' => $game]);
 
