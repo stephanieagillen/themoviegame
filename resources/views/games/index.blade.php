@@ -23,7 +23,7 @@
  
 <ul>
     @foreach($viewgames as $game)
-        <li><a href="/games/{{ $game }}">{{ $game->title }}</a></li>
+        <li><a href="#">{{ $game->title }}</a></li>
     @endforeach
 </ul>
  
