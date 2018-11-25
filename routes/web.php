@@ -1,5 +1,5 @@
 <?php
-
+use App\Game;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -98,19 +98,19 @@ Route::get('/test', function(){
 // 	return view('gamelist', ['viewgames' => $games]);
 // });
 
-Route::get('game', function(){
-	$games = DB::table('games')->latest()->get();
+// Route::get('game', function(){
+// 	$games = DB::table('games')->latest()->get();
 
-	return view('games.index', ['games' => $games]);
-});
+// 	return view('games.index', ['games' => $games]);
+// });
 
-Route::get('game/{id}', function($id){
+// Route::get('game/{id}', function($id){
 
-	$game = DB::table('games')->find($id);
+// 	$game = DB::table('games')->find($id);
 
-	return view('games.show', ['game' => $game]);
+// 	return view('games.show', ['game' => $game]);
 
-});
+// });
 
 // Route::get('games', function() {
 
@@ -124,6 +124,16 @@ Route::get('/calculator', function(){
 	return view('calculator');
 });
 
+
+Route::get('game', function(){
+	$games = Game::all();
+	return view('games.index',['games'=>$games]);
+});
+
+Route::get('game', function(){
+	$game = Game::find($id);
+	return view('games.show', ['game'=>game]);
+});
 
 
 
