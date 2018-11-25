@@ -136,8 +136,9 @@ Route::get('game/{id}', function($id){
 });
 
 Route::get('/friends', function(){
-	return Game::Friendsgiving()->get();
-	->where('id', '=', '1');
+	return Game::friendsgiving()
+	->where('id', '=', '1')
+	->get();
 });
 
 
