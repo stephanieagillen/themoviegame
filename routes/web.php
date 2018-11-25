@@ -130,7 +130,7 @@ Route::get('game', function(){
 	return view('games.index',['games'=>$games]);
 });
 
-Route::get('game', function(){
+Route::get('game/{id}', function($id){
 	$game = Game::find($id);
 	return view('games.show', ['game'=>game]);
 });
