@@ -5,8 +5,11 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Game extends Model
-{
 
+{
+    
+    //arrays in table
+    protected $primaryKey = 'game_id';
 
 	/**
     *The attributes that are mass assignable.
@@ -17,8 +20,7 @@ class Game extends Model
     protected $fillable = ['name', 'players', 'movies', 'guesses', 'scores', 'critic_scores'];
     
 	
-    //arrays in table
-	protected $primaryKey = 'game_id';
+    
 
 	/**
 	*The attributes that should be case to native types.
