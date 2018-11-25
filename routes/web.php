@@ -125,15 +125,9 @@ Route::get('/calculator', function(){
 });
 
 
-Route::get('game', function(){
-	$games = Game::all();
-	return view('games.index',['games'=>$games]);
-});
+Route::get('game', 'GameControll@index()';
 
-Route::get('game/{id}', function($id){
-	$game = Game::find($id);
-	return view('games.show', ['game'=>$game]);
-});
+Route::get('game/{id}', 'GameController@show()';
 
 Route::get('friends', function(){
 	return Game::friendsgiving()
