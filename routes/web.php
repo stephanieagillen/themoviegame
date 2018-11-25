@@ -135,6 +135,10 @@ Route::get('game/{id}', function($id){
 	return view('games.show', ['game'=>$game]);
 });
 
+Route::get('/friends', function(){
+	return Game::Friendsgiving()->get();
+	->where('id', "=", "1")
+});
 
 
 

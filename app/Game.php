@@ -8,6 +8,10 @@ class Game extends Model
 
 {
 
+    public function scopeFriendsgiving($query){
+        return $query->where('publisher','=','Nintendo');
+    }
+
     //arrays in table
     protected $primaryKey = 'id';
 
