@@ -24,7 +24,7 @@ class GameController extends Controller
     // *@return Response
     // */
 
-    // public function show(Game $id){
+    // public function show(Game $game_id){
     // 	return view('games.show',['game'=>$game_id]);
     // }
 
