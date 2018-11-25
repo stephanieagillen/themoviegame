@@ -1,13 +1,10 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Game</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('content')
+
  <p>
 {{ $game->name }} is published by {{ $game->id }}
  </p>
-</body>
-</html>
+
+@endsection
