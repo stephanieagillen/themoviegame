@@ -31,7 +31,8 @@ class Game extends Model
     	'movies' => 'array',
     	'guesses' => 'array',
     	'scores' => 'array',
-    	'critic_scores' => 'array,'
+    	'critic_scores' => 'array',
+        'game_id' => 'int'
 
     ];
 
