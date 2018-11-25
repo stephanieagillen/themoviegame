@@ -9,7 +9,7 @@ class Game extends Model
 {
 
     public function scopeFriendsgiving($query){
-        return $query->where('publisher','=','Nintendo');
+        return $query->where('name','=','friendsgiving');
     }
 
     //arrays in table
