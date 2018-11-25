@@ -127,9 +127,12 @@ Route::get('/calculator', function(){
 
 Route::get('game', 'GameController@index');
 
+Route::get('games/create', 'GameController@create');
+
 Route::get('game/{id}', 'GameController@show');
 
 Route::get('friends', 'GameController@friendsGame');
+
 
 
 

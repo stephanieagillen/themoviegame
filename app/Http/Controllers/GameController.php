@@ -22,9 +22,17 @@ class GameController extends Controller
     *
     *@return Response
     */
-    public function show($id){
-        $game = Game::find($id);
-        return view('games.show', ['game'=>$game]);
+    public function show(Game $id){
+        return view('games.show', ['game'=>$id]);
+    }
+
+    /**
+    *Create a new game
+    *
+    *@return Response
+    */
+    public function create(){
+        return 'it works';
     }
 
     /**
@@ -38,17 +46,4 @@ class GameController extends Controller
         ->get();
     }
 
-
-    /**
-    *Show the form for creating a new game.
-    *
-    *@return Response
-    */
-    public function create(){
-
-    	return 'it workds';
-
-    }
-
-    
 }
