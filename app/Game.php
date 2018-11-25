@@ -19,7 +19,7 @@ class Game extends Model
 
 	
     //arrays in table
-	protected $primaryKey = 'id';
+	protected $primaryKey = 'game_id';
 
 	/**
 	*The attributes that should be case to native types.
