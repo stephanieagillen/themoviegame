@@ -11,23 +11,22 @@ class GameController extends Controller
     *
     *@return Response
     */
-    /*public function index(){
+    public function index(){
 
-    	$games = Games::all();
+    	$games = Game::all();
     	return view('games.index',['games'=>$games]);
 
-    }*/
+    }
 
+    // /**
+    // *Display a the game selected.
+    // *
+    // *@return Response
+    // */
 
-    /**
-    *Display a the game selected.
-    *
-    *@return Response
-    */
-
-    /*public function show(Game $id){
-    	return view('games.show',['game'=>$id]);
-    }*/
+    // public function show(Game $id){
+    // 	return view('games.show',['game'=>$game_id]);
+    // }
 
 
     /**
