@@ -16,7 +16,6 @@ class Game extends Model
 
     protected $fillable = ['name', 'players', 'movies', 'guesses', 'scores', 'critic_scores'];
     
-
 	
     //arrays in table
 	protected $primaryKey = 'game_id';
