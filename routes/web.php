@@ -125,13 +125,11 @@ Route::get('/calculator', function(){
 });
 
 
-Route::get('game', 'GameController@index()';
+Route::get('game', 'GameController@index');
 
-Route::get('game/{id}', 'GameController@show()';
+Route::get('game/{id}', 'GameController@show');
 
-Route::get('friends', function(){
-
-});
+Route::get('friends', 'GameController@friendsGame');
 
 
 
