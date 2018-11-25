@@ -98,7 +98,7 @@ Route::get('/test', function(){
 // 	return view('gamelist', ['viewgames' => $games]);
 // });
 
-Route::get('/game', function(){
+Route::get('game', function(){
 	$games = DB::table('games')->latest()->get();
 
 	return view('games.index', ['games' => $games]);
@@ -106,7 +106,7 @@ Route::get('/game', function(){
 
 Route::get('game/{game_id}', function($game_id){
 
-	$game = DB::table('games')->where("game_id", "=", $game_id);
+	$game = DB::table('games')->find($game_id);
 
 	return view('games.show', ['game' => $game]);
 
