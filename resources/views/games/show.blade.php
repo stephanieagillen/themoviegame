@@ -6,8 +6,8 @@
     <title>Game</title>
 </head>
 <body>
- 
-{{ $game->name }} is published by {{ $game->players }}
- 
+ <p>
+{{ $game->name }} is published by {{ $game->id }}
+ </p>
 </body>
 </html>
