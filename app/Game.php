@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Game extends Model
 
 {
-    
+
     //arrays in table
-    protected $primaryKey = 'game_id';
+    protected $primaryKey = 'id';
 
 	/**
     *The attributes that are mass assignable.
@@ -34,7 +34,6 @@ class Game extends Model
     	'guesses' => 'array',
     	'scores' => 'array',
     	'critic_scores' => 'array',
-        'game_id' => 'int'
 
     ];
 
