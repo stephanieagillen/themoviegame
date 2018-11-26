@@ -1,8 +1,6 @@
-@extends('layouts.app')
 
-@section('content')
-<test></test>
-<div class="container">
+<template>
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
@@ -10,7 +8,7 @@
                         <button @click="initAddGame()" class="btn btn-primary btn-xs pull-right">
                             + Add New Game
                         </button>
-                        My Games
+                        My Gamesss
                     </div>
  
                     <div class="panel-body">
@@ -29,15 +27,17 @@
                         <h4 class="modal-title">Add New Game</h4>
                     </div>
                     <div class="modal-body">
+ 
+                        <div class="alert alert-danger" v-if="errors.length > 0">
+                            <ul>
+                                <li v-for="error in errors">{{ error }}</li>
+                            </ul>
+                        </div>
+ 
                         <div class="form-group">
                             <label for="name">Name:</label>
                             <input type="text" name="name" id="name" placeholder="Game Name" class="form-control"
                                    v-model="game.name">
-                        </div>
-                        <div class="form-group">
-                            <label for="description">Description:</label>
-                            <textarea name="description" id="description" cols="30" rows="5" class="form-control"
-                                      placeholder="Game Description" v-model="game.description"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -49,6 +49,47 @@
         </div><!-- /.modal -->
  
     </div>
-@endsection
-
-
+</template>
+ 
+<script>
+    export default {
+        data() {
+            return {
+                game: {
+                    name: ''
+                },
+                errors: []
+            }
+        },
+        methods: {
+            initAddGame()
+            {
+                this.errors = [];
+                $("#add_game_model").modal("show");
+            },
+            createGame()
+            {
+                axios.post('/game', {
+                    name: this.game.name
+                })
+                    .then(response => {
+ 
+                        this.reset();
+ 
+                        $("#add_game_model").modal("hide");
+ 
+                    })
+                    .catch(error => {
+                        this.errors = [];
+                        if (error.response.data.errors.name) {
+                            this.errors.push(error.response.data.errors.name[0]);
+                        }
+                    });
+            },
+            reset()
+            {
+                this.game.name = '';
+            },
+        }
+    }
+</script>
