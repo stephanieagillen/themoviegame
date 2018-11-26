@@ -39,11 +39,6 @@
                             <input type="text" name="name" id="name" placeholder="Game Name" class="form-control"
                                    v-model="game.name">
                         </div>
-                        <div class="form-group">
-                            <label for="description">Description:</label>
-                            <textarea name="description" id="description" cols="30" rows="5" class="form-control"
-                                      placeholder="Game Description" v-model="game.description"></textarea>
-                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -61,8 +56,7 @@
         data(){
             return {
                 game: {
-                    name: '',
-                    description: ''
+                    name: ''
                 },
                 errors: []
             }
@@ -76,8 +70,7 @@
             createGame()
             {
                 axios.post('/game', {
-                    name: this.game.name,
-                    description: this.game.description,
+                    name: this.game.name
                 })
                     .then(response => {
  
@@ -91,16 +84,11 @@
                         if (error.response.data.errors.name) {
                             this.errors.push(error.response.data.errors.name[0]);
                         }
- 
-                        if (error.response.data.errors.description) {
-                            this.errors.push(error.response.data.errors.description[0]);
-                        }
                     });
             },
             reset()
             {
                 this.game.name = '';
-                this.game.description = '';
             },
         }
     }
