@@ -1,6 +1,4 @@
 
-import Vue from 'vue';
-
 @extends('layouts.app')
 
 @section('content')
