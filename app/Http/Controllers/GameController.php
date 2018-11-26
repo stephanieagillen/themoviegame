@@ -32,7 +32,7 @@ class GameController extends Controller
     *@return Response
     */
     public function create(){
-        return 'it works';
+        return view('games.create');
     }
 
     /**
