@@ -54,12 +54,10 @@
     new Vue ({
         el:'#app',
         data: {
-            return {
                 game: {
                     name: ''
                 },
                 errors: []
-            }
         },
         methods: {
             initAddGame()
