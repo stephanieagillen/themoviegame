@@ -53,7 +53,7 @@
  
 <script>
     export default {
-        data(){
+        data(): {
             return {
                 game: {
                     name: ''
