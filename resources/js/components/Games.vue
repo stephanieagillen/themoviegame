@@ -8,7 +8,7 @@
                         <button @click="initAddGame()" class="btn btn-primary btn-xs pull-right">
                             + Add New Game
                         </button>
-                        My Games
+                        My Gamesss
                     </div>
  
                     <div class="panel-body">
