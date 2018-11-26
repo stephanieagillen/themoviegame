@@ -72,8 +72,7 @@
                     name: this.game.name
                 })
                     .then(response => {
- 
-                        this.reset();
+
  
                         $("#add_game_model").modal("hide");
  
@@ -84,10 +83,6 @@
                             this.errors.push(error.response.data.errors.name[0]);
                         }
                     });
-            },
-            reset()
-            {
-                this.game.name = '';
             },
         }
     });
