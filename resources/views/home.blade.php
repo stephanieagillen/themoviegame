@@ -29,11 +29,11 @@
                     </div>
                     <div class="modal-body">
  
-                        <div class="alert alert-danger" v-if="errors.length > 0">
+                        <!-- <div class="alert alert-danger" v-if="errors.length > 0">
                             <ul>
                                 <li v-for="error in errors">{{ error }}</li>
                             </ul>
-                        </div>
+                        </div> -->
  
                         <div class="form-group">
                             <label for="name">Name:</label>
