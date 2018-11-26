@@ -53,7 +53,7 @@ import Vue from 'vue';
 @endsection
 
 <script>
-    export default {
+    new Vue ({
         data: {
             return {
                 game: {
@@ -92,7 +92,7 @@ import Vue from 'vue';
                 this.game.name = '';
             },
         }
-    }
+    });
 </script>
 
 
