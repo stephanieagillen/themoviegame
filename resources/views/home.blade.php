@@ -10,7 +10,7 @@
                         <button @click="initAddGame()" class="btn btn-primary btn-xs pull-right">
                             + Add New Game
                         </button>
-                        My Gamesss
+                        My Games
                     </div>
  
                     <div class="panel-body">
@@ -52,6 +52,7 @@
 
 <script>
     new Vue ({
+        el:'#app',
         data: {
             return {
                 game: {
