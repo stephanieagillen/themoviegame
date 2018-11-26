@@ -29,11 +29,6 @@
                     </div>
                     <div class="modal-body">
  
-                        <div class="alert alert-danger" v-if="errors.length > 0">
-                            <ul>
-                                
-                            </ul>
-                        </div>
  
                         <div class="form-group">
                             <label for="name">Name:</label>
