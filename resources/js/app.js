@@ -16,9 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
-Vue.component('games', require('./components/Games.vue'), {
-	name: 'games'
-});
+Vue.component('games', require('./components/Games.vue'));
 
 const app = new Vue({
     el: '#app'
