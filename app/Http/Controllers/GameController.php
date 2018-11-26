@@ -60,23 +60,12 @@ class GameController extends Controller
     }
  
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Task  $task
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Task $task)
-    {
-        //
-    }
- 
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Task  $task
      * @return \Illuminate\Http\Response
      */
-    public function edit(Task $task)
+    public function edit(Game $game)
     {
         //
     }
@@ -88,7 +77,7 @@ class GameController extends Controller
      * @param  \App\Task  $task
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Task $task)
+    public function update(Request $request, Game $game)
     {
         //
     }
