@@ -8,7 +8,7 @@
                         <button @click="initAddGame()" class="btn btn-primary btn-xs pull-right">
                             + Add New Game
                         </button>
-                        My Gamesss
+                        My Games
                     </div>
  
                     <div class="panel-body">
@@ -69,7 +69,7 @@
             },
             createGame()
             {
-                axios.post('/game', {
+                axios.post('/home', {
                     name: this.game.name
                 })
                     .then(response => {
