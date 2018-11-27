@@ -3,6 +3,9 @@
 <div id="app">
   {{ message }}
 </div>
+<div>
+testing
+</div>
 
 
 <script>
