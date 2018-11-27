@@ -8,7 +8,7 @@
 <game></game>
 
  <div>
-  @{{ message }}
+  {{ message }}
 </div>
 <div>
 test
