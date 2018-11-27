@@ -1,6 +1,6 @@
 
   <div id="app">
-  @{{ message }}
+  {{ message }}
 </div>
 
 
