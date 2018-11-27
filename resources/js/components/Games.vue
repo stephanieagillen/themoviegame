@@ -69,6 +69,7 @@
             },
             createGame()
             {
+                console.log("in create game");
                 axios.post('/home', {
                     name: this.game.name
                 })
