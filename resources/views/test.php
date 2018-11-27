@@ -1,6 +1,8 @@
 
+ <script src="https://unpkg.com/vue@2.4.2"></script>
+
   <div id="app">
-  @{{ message }}
+  {{ message }}
 </div>
 
 
