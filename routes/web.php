@@ -47,6 +47,10 @@ Route::get('/test', function(){
 	return view('games.game');
 });
 
+Route::get('/test1', function(){
+	return view('test');
+});
+
 
 //Route::get('/games', 'GameController@index');
 //Route::get('/game/create', 'GameController@create');
@@ -127,11 +131,13 @@ Route::get('/calculator', function(){
 
 Route::get('game', 'GameController@index');
 
-Route::get('games/create', 'GameController@create');
+Route::get('game/create', 'GameController@create');
 
 Route::get('game/{id}', 'GameController@show');
 
 Route::get('friends', 'GameController@friendsGame');
+
+Route::resource('/play','GameController');
 
 
 
