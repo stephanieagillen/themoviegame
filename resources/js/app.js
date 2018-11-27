@@ -10,7 +10,6 @@ require('./bootstrap');
 /*import Vue from 'vue';
 window.Vue = require('vue'); */
 
-import Vue from 'vue';
  window.Vue = Vue;
 
 /**
@@ -29,4 +28,5 @@ const app = new Vue({
     el: '#app'
 });
 
+console.log('hi');
 

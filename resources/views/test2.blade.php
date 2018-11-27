@@ -1,7 +1,6 @@
 
 
 @extends('layouts.app')
- <script src="https://unpkg.com/vue@2.4.2"></script>
  
 @section('content')
 <example-component></example-component>
