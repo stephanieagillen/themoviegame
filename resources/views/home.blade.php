@@ -2,22 +2,21 @@
 <html>
 <head>
   <title></title>
- 
+ <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
   <div id="app">
-  <h1>{{ $age * 2 }}</h1>
+  {{ message }}
 </div>
 </body>
 </html>
 
 <script>
 
-new Vue({
+var app = new Vue({
   el: '#app',
   data: {
-    var age: 27,
-    var name: 'Bo Andersen'
+    message: 'Hello Vue!'
   }
 });
 </script>
