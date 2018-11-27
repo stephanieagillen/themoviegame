@@ -51,6 +51,9 @@ Route::get('/test1', function(){
 	return view('test');
 });
 
+Route::get('/test2', function(){
+	return view('test2');
+});
 
 //Route::get('/games', 'GameController@index');
 //Route::get('/game/create', 'GameController@create');
