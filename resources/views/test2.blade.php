@@ -2,6 +2,7 @@
  
 @section('content')
 <example-component></example-component>
+<game></game>
 
  <div>
   @{{ message }}
