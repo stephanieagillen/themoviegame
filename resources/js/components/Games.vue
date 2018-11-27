@@ -56,7 +56,7 @@
         data() {
             return {
                 game: {
-                    name: ''
+                    name: 'test'
                 },
                 errors: []
             }
