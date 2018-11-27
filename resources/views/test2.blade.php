@@ -4,7 +4,7 @@
 <example-component></example-component>
 
  <div>
-  {{ message }}
+  @{{ message }}
 </div>
 <div>
 test
